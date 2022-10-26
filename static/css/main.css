@@ -1,0 +1,65 @@
+.intro {
+  background-color: yellow;
+  margin: 10px 70px 50px 70px;
+  padding: 30px;
+  border-radius: 10px;
+  border: 2px solid gray;
+
+}
+
+body {
+  font-family: "Times New Roman", Times, serif;
+}
+
+p {
+  color: gray;
+  font-size: 20px;
+}
+
+img {
+  width: 640px;
+  height: 360px;
+  border: 2px solid gray;
+  border-radius: 10px;
+  margin: 15px;
+}
+
+.textarea {
+  width: 640px;
+  height: 360px;
+  border: 2px solid gray;
+  border-radius: 10px;
+  margin: 10px;
+
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+
+.web-cam {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.translation {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.button {
+  background-color: yellow;
+  border: 2px solid gray;
+  color: black;
+  width: 640px;
+  height: 45px;
+  font-family: "Times New Roman", Times, serif;
+  text-align: center;
+  text-decoration: none;
+  font-size: 20px;
+  border-radius: 20px;
+}

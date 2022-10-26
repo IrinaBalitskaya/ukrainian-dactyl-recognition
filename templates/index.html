@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Класифікація українського дактильного алфавіту</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+</head>
+<body class="body">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="static/js/main.js"></script>
+
+<div class="intro">
+    <h1>Класифікація українського дактильного алфавіту</h1>
+    <p> Український дактильний алфавіт — допоміжна система української жестової мови, в якій
+        кожному жесту однієї руки (зазвичай нерухомою правою, зігнутою в лікті) відповідає літера української мови;
+        багато дактилем зовні схожі на відповідні літери української абетки. Промовляння ведеться за правилами
+        української орфографії. Дактилологія відрізняється від звичайних жестів, що позначають поняття або комплекс
+        понять. Використовується для промовляння допоміжних слів, слів, у яких відсутнє жестове позначення
+        («дефрагментація», «геном», деяких топонімів та власних назв), а також у разі, якщо потрібно прояснити значення
+        того чи іншого слова.</p>
+</div>
+<div>
+    <div class="grid-container">
+        <div class="web-cam">
+            <h2>Трансляція</h2>
+            <img src="{{ url_for('stream') }}"/>
+            <button class="button" id="button_start">Почати</button>
+        </div>
+
+        <div class="translation">
+            <h2>Переклад</h2>
+
+            <div id="translation_textarea">
+                <textarea readonly class="textarea" > {{translation}} </textarea>
+            </div>
+
+            <button class="button" id="button_clear">Очистити</button>
+        </div>
+
+    </div>
+</div>
+</body>
+</html>
