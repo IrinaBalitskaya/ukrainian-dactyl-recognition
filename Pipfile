@@ -6,12 +6,15 @@ name = "pypi"
 [packages]
 tensorflow = "*"
 tensorflow-gpu = "*"
-opencv-python = "==4.5.4.58"
+opencv-python = "==4.5.5.64"
 mediapipe = "*"
 sklearn = "*"
 matplotlib = "*"
+numpy = "*"
+flask = "*"
 
 [dev-packages]
 
 [requires]
 python_version = "3.10"
+
