@@ -12,6 +12,7 @@ sklearn = "*"
 matplotlib = "*"
 numpy = "*"
 flask = "*"
+gunicorn = "*"
 
 [dev-packages]
 
