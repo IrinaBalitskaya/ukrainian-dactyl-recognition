@@ -4,8 +4,7 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
-tensorflow = "*"
-tensorflow-gpu = "*"
+tensorflow-cpu = "*"
 opencv-python = "==4.5.5.64"
 mediapipe = "*"
 sklearn = "*"
