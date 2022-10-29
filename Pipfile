@@ -11,8 +11,6 @@ mediapipe = "*"
 #matplotlib = "*"
 numpy = "*"
 flask = "*"
-gunicorn = "*"
-opencv-python-headless = "*"
 
 [dev-packages]
 
