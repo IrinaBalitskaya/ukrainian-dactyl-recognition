@@ -63,3 +63,16 @@ img {
   font-size: 20px;
   border-radius: 20px;
 }
+
+.button2 {
+  background-color: yellow;
+  border: 2px solid gray;
+  color: black;
+  width: 310px;
+  height: 45px;
+  font-family: "Times New Roman", Times, serif;
+  text-align: center;
+  text-decoration: none;
+  font-size: 20px;
+  border-radius: 20px;
+}

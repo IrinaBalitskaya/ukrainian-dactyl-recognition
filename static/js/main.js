@@ -22,6 +22,13 @@ $(document).on('click','#button_clear',function(){
      });
 });
 
+$(document).on('click','#button_erase',function(){
+     $.ajax({
+        url: "/erase_letter",
+        type: "DELETE"
+     });
+});
+
 $(document).on('click','#button_start',function(){
      $.ajax({
         url: "/start_pause_webcam",

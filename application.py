@@ -29,6 +29,13 @@ def clear_textarea():
     return jsonify('', render_template('translation_textarea.html', translation=''))
 
 
+@application.route('/erase_letter', methods=['DELETE'])
+def erase_letter():
+    if len(cfg.sentence) > 0:
+        cfg.sentence.pop()
+    return jsonify('', render_template('translation_textarea.html', translation=''.join(cfg.sentence)))
+
+
 @application.route('/start_pause_webcam', methods=['PUT'])
 def start_pause_webcam():
     cfg.is_feed_on = not cfg.is_feed_on
